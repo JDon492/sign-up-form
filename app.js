@@ -13,8 +13,4 @@ form.addEventListener("submit", (e) => {
         e.preventDefault()
         errorMessage.innerText = ('Passwords do not match')
     }
-    if (firstName.innertext !== /[A-Za-z]/) {
-        e.preventDefault()
-        errorMessage.innerText = ('Name must not contain numbers')
-    }
 })

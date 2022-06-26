@@ -112,6 +112,10 @@ input:placeholder-shown,
     border-radius: 4px;
 }
 
+.input-field > input:focus {
+    background-color: rgb(159, 205, 226);
+}
+
 label {
     white-space: nowrap;
     overflow: hidden;
@@ -150,6 +154,10 @@ a {
     color: #888;
     font-size: larger;
     font-weight: bolder;
+}
+
+.errorFound {
+    border-color: red;
 }
 
 .footer { 
