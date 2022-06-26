@@ -1,4 +1,3 @@
-let firstName = document.querySelector("#first-name");
 let password = document.querySelector("#password-box");
 let confirmPass = document.querySelector("#confirm-pass");
 let form = document.querySelector("#form");
