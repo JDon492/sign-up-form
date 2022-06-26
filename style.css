@@ -66,6 +66,8 @@ body {
     margin-bottom: 30px;
 }
 
+
+
 .mid-panel {
     background-color: #333;
     padding: 40px;
@@ -83,6 +85,19 @@ body {
     margin-right: 60%;
 }
 
+.form-entry::after {
+    color: #999;
+    content: "(*) are required fields";
+}
+
+input {
+    font-size: 14px;
+}
+
+input:placeholder-shown,
+.form-entry::after {
+    font-style: italic;
+}
 
 .input-field {
     display: flex;
@@ -95,14 +110,23 @@ body {
     border-radius: 4px;
 }
 
+.input-field > input:active {
+    border-color: red;
+}
+
 label {
     white-space: nowrap;
     overflow: hidden;
 }
 
+#error-message {
+    color: crimson;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
 .submit-button {
     margin-top: 30px;
-    margin-left: 40px;
     padding: 15px 20px;
     border-radius: 10px;
     background-color: #777;
